@@ -1,0 +1,49 @@
+#Matt Clark
+#CS101 Lab
+#Assignment 3
+#mcm3t@umkc.edu
+
+
+print('Welcome the the Flasheim Guesser! ')
+
+print('Please think of a number between 1-100 ')
+
+print()
+
+
+gameOn = input('Ready to play? Type "Y" to play or "N" to quit!')
+
+
+        
+factorThree = int(input('What is the remainder when your number is divided by 3? '))
+if factorThree < 0:
+    print('Value entered must be 0 or greater.')
+else:
+    factorThree = factorThree % 3
+
+factorFive = int(input('What is the remainder when your number is divided by 5? '))
+if factorFive < 0:
+    print('Value entered must be 0 or greater.')
+else:
+    factorFive = factorFive % 5
+
+factorSeven = int(input('What is the remainder when your number is divided by 7? '))
+if factorSeven < 0:
+    print('Value entered must be 0 or greater.')
+else:
+    factorSeven = factorSeven % 7
+
+def gameplay():
+    while gameOn == 'Y' or 'y':
+        return factorThree
+        return factorFive
+        return factorSeven
+
+
+        if gameOn == 'N' or 'n':
+            break
+        
+numberGuess = factorThree + factorFive + factorSeven
+        
+
+print('Your number is: ', factorThree + factorFive + factorSeven)
